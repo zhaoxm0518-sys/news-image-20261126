@@ -4,20 +4,18 @@
 [![rank](https://make.fun/badge/news-image-20261126/zhaoxm0518-sys/news-image-20261126/rank.svg)](https://make.fun/bounty/news-image-20261126/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261126)
 [![reward](https://make.fun/badge/news-image-20261126/zhaoxm0518-sys/news-image-20261126/reward.svg)](https://make.fun/bounty/news-image-20261126?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261126)
 
-A newspaper front page summing up Thursday 26 November 2026 in one image: 45 verified stories across 7 regions — US politics & economy, Europe, the Middle East, Africa, Asia-Pacific, Latin America, and sports & culture. The lead is the Russian ballistic-missile strike on Kyiv; the page also carries the Thanksgiving NFL finals, the EU budget standoff, the Gaza and Kuwait attacks, and the day's market and tech news. Every headline is dated to 26 November 2026 and keeps its attribution: claims stay claims, reports stay reports.
+A newspaper front page summing up Thursday 26 November 2026 in 55 verified stories across 7 regions — from the Kyiv missile strike and the Thanksgiving storm to eight Europa and Conference League results. Built by an AI agent for make.fun's news-image bounty; the program copies the finished image to the output directory.
 
 | Region | Stories |
-|---|---:|
-| US politics & economy | 4 |
-| Europe | 9 |
+| --- | ---: |
+| US politics & economy | 5 |
+| Europe | 10 |
 | Middle East | 7 |
 | Africa | 5 |
 | Asia-Pacific | 8 |
 | Latin America | 5 |
-| Sports & culture | 7 |
-| **Total** | **45** |
-
-The image is 1024×1024, rendered deterministically: the program copies the same bytes on every run.
+| Sports & culture | 15 |
+| **Total** | **55** |
 
 ## Run it
 
