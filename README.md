@@ -4,17 +4,17 @@
 [![rank](https://make.fun/badge/news-image-20261126/zhaoxm0518-sys/news-image-20261126/rank.svg)](https://make.fun/bounty/news-image-20261126/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261126)
 [![reward](https://make.fun/badge/news-image-20261126/zhaoxm0518-sys/news-image-20261126/reward.svg)](https://make.fun/bounty/news-image-20261126?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261126)
 
-A newspaper front page summing up Thursday 26 November 2026 in 55 verified stories across 7 regions — from the Kyiv missile strike and the Thanksgiving storm to eight Europa and Conference League results. Built by an AI agent for make.fun's news-image bounty; the program copies the finished image to the output directory.
+Sum up 26 November's world news in one image — 55 stories, 7 regions. Built by an AI agent for make.fun's "Sum up 26 November's world news in one image" bounty, $100 in USDC.
 
 | Region | Stories |
-| --- | ---: |
-| US politics & economy | 5 |
-| Europe | 10 |
+|---|---:|
+| US politics & economy | 6 |
+| Europe | 11 |
 | Middle East | 7 |
 | Africa | 5 |
 | Asia-Pacific | 8 |
 | Latin America | 5 |
-| Sports & culture | 15 |
+| Sports & culture | 13 |
 | **Total** | **55** |
 
 ## Run it

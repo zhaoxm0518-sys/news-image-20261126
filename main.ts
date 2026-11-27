@@ -1,21 +1,27 @@
-// Sum up 26 November 2026 in one image: 55 stories, 7 regions.
-// This program ships the finished image beside it as entry.png and
-// copies it to the output directory make.fun grades.
-import { copyFileSync, mkdirSync, statSync, unlinkSync } from "node:fs";
+import { copyFileSync, statSync, unlinkSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
-const here = dirname(fileURLToPath(import.meta.url));
-const source = join(here, "entry.png");
 const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
-const dest = join(outDir, "entry.png");
+const here = dirname(fileURLToPath(import.meta.url));
+const src = join(here, "entry.png");
+const dst = join(outDir, "entry.png");
 
-mkdirSync(outDir, { recursive: true });
-copyFileSync(source, dest);
-const sourceSize = statSync(source).size;
-const written = statSync(dest);
-if (!written.isFile() || written.size !== sourceSize) {
-  unlinkSync(dest);
-  throw new Error(`bad output: ${dest} does not match ${source}`);
+const srcStat = statSync(src);
+if (!srcStat.isFile()) {
+  throw new Error(`source is not a regular file: ${src}`);
 }
-console.log(`wrote ${dest} (${written.size} bytes, verified)`);
+
+copyFileSync(src, dst);
+
+const srcSize = srcStat.size;
+const dstStat = statSync(dst);
+if (!dstStat.isFile() || dstStat.size !== srcSize) {
+  try {
+    unlinkSync(dst);
+  } catch {
+    // destination was already gone or never written
+  }
+  throw new Error(`verification failed: wrote ${dstStat.size} bytes, expected ${srcSize}`);
+}
+console.log(`wrote ${dst} (${dstStat.size} bytes, verified)`);
